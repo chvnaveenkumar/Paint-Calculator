@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.s530742.chandaluri_program04.MainActivity">
+
+    <ImageButton
+        android:id="@+id/wallButton"
+        android:layout_width="128dp"
+        android:layout_height="129dp"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="25dp"
+        android:onClick="wallButton"
+        app:layout_constraintBottom_toTopOf="@+id/paintButton"
+        app:layout_constraintEnd_toStartOf="@+id/wallText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wall" />
+
+    <TextView
+        android:id="@+id/wallText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="460dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginTop="32dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/wallButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/paintButton"
+        android:layout_width="136dp"
+        android:layout_height="136dp"
+        android:layout_marginBottom="223dp"
+        android:layout_marginEnd="217dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="23dp"
+        android:onClick="paintButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wallButton"
+        app:srcCompat="@drawable/quality" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="174dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="313dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="128dp"
+        android:text="This button will set the values to premium, standard and economy values"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/paintButton"
+        app:layout_constraintTop_toBottomOf="@+id/wallText"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="198dp"
+        android:layout_height="118dp"
+        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paintButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="140dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="82dp"
+        android:onClick="reset"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/totalPrice"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="188dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="101dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="9dp"
+        android:text="This button will take the values of length width and height"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toEndOf="@+id/wallButton"
+        app:layout_constraintTop_toBottomOf="@+id/wallText"
+        app:layout_constraintVertical_bias="0.281" />
+
+</android.support.constraint.ConstraintLayout>
